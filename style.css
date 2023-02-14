@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+body {
+  background-color: #131200;
+  background-image: url("images/back.gif");
+  font-family: 'Lovers Quarrel', cursive;
+  color: white;
+}
+.info {
+  bottom: 21vh;
+    position: absolute;
+}
+.info h1 {
+  font-size: 7rem;
+}
+.valentin {
+  width: 283px;
+  position: absolute;
+  left: 0;
+  top: 89px;
+}
+
+.nico {
+  width: 307px;
+  position: absolute;
+  right: 0;
+  top: 21px;
+}
+
+.heart {
+  z-index: 3;
+  transform: scale(1.5);
+  animation: zoom-in-zoom-out 1s ease;
+}
+
+#c1 {
+  width: 30px;
+  position: absolute;
+  right: 235px;
+  top: 138px;
+}
+
+#c2 {
+  width: 30px;
+  position: absolute;
+  right: 165px;
+  top: 149px;
+}
+
+.z {
+  z-index: 3;
+}
+
+.coeur-table {
+  position: absolute;
+  top: 168px;
+  left: 141px;
+  width: 1086px;
+}
+
+.coeur-table td {
+  height: 40px;
+  width: 40px;
+}
+.coeur-table td.active {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.coeur-table td.finish {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#coeur td.active {
+  background-image: url("images/coeur.webp");
+  transform: rotate(45deg);
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.5, 1.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
